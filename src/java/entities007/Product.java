@@ -6,11 +6,12 @@ public class Product {
     private double price;
     private int quantity;
 
-    public Product(String nome, double price, int quantity){
+    public Product(String name, double price, int quantity){
         this.name = name;
         this.price = price;
         this.quantity = quantity;
     }
+
 
     public String getName() {
         return name;
@@ -30,12 +31,6 @@ public class Product {
 
     public int getQuantity() {
         return quantity;
-    }
-
-    public Product(String nome, double price, int quantity){
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
     }
 
     public double totalValueInStock(){
