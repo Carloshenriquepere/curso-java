@@ -28,7 +28,7 @@ public class Ex005 {
             //VALIDAÇÃO DAS OPÇÕES
             switch (opcao){
                 case 1:
-                    System.out.println("Adicionar 2 ou mais para sorteio:");
+                    System.out.println("Adicionar quantas pessoas iram participar do sorteio:");
                     int quantidade = sc.nextInt();
 
                     nomes = new String[quantidade];
