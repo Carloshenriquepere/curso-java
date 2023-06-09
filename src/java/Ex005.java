@@ -9,9 +9,9 @@ public class Ex005 {
 
 
         //ARRAY PARA GUARDAR A LISTA DE NOMES
-        var random = new Random();
+        Random random = new Random();
         String[] nomes = { };
-        var sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int opcao;
 
         do {
@@ -26,30 +26,32 @@ public class Ex005 {
             opcao = sc.nextInt();
 
             //VALIDAÇÃO DAS OPÇÕES
-            switch (opcao) {
-                case 1 -> {
+            switch (opcao){
+                case 1:
                     System.out.println("Adicionar quantas pessoas iram participar do sorteio:");
                     int quantidade = sc.nextInt();
+
                     nomes = new String[quantidade];
+
                     for (int i = 0; i < quantidade; i++) {
-                        System.out.println("Digite o nome " + (i + 1) + "º:");
+                        System.out.println("Digite o nome " + (i+1) + "º:");
                         nomes[i] = sc.next();
                     }
                     System.out.println("\n");
-                }
-                case 2 -> {
-                    if (nomes.length >= 1) {
+                    break;
+                case 2:
+                    if(nomes.length >= 1){
                         System.out.println("Nomes na lista:\n");
                         for (String nome : nomes) {
-                            System.out.println(" - " + nome);
+                        System.out.println(" - " + nome);
                         }
-                    } else {
+                    }else {
                         System.out.println("Não a nomes suficientes para lista:");
                     }
                     System.out.println("\n");
-                }
-                case 3 -> {
-                    if (nomes.length >= 2) {
+                    break;
+                case 3:
+                    if (nomes.length >= 2){
                         int indiceSorteado = random.nextInt(nomes.length);
 
                         String nomeSorteado = nomes[indiceSorteado];
@@ -68,10 +70,11 @@ public class Ex005 {
                         }
 
                         nomes = novosNomes;
-                    } else {
+                    }else {
                         System.out.println("Não á nomes suficientes para sorteio:");
                     }
-                }
+                    break;
+
             }
 
         } while (opcao != 4);
