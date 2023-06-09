@@ -1,8 +1,10 @@
 package src.java;
 
+
 import src.java.entities.Triangle;
 
 import java.util.Locale;
+
 import java.util.Scanner;
 
 public class Ex006 {
