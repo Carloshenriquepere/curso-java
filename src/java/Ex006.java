@@ -1,7 +1,7 @@
 package src.java;
 
 
-import src.java.entities.Triangle;
+import src.java.entities006.Triangle;
 
 import java.util.Locale;
 
